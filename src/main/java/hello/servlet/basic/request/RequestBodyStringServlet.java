@@ -21,8 +21,6 @@ public class RequestBodyStringServlet extends HttpServlet {
 
         String messageBody = copyToString(inputStream, UTF_8);
 
-        System.out.println("messageBody = " + messageBody);
-
         response.getWriter().write("ok");
     }
 }
